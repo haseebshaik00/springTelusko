@@ -1,15 +1,10 @@
 package com.example.springTelusko;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("lap1")
 public class Laptop {
     private int lid;
     private String name;
-
-    public Laptop(int lid, String name) {
-        this.lid = lid;
-        this.name = name;
-    }
 
     public int getLid() {
         return lid;

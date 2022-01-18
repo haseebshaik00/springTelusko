@@ -1,4 +1,6 @@
 package com.example.springTelusko;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +10,8 @@ public class Student {
 
     private int rollno;
     private String name;
+    @Autowired
+    @Qualifier("lap1")
     private Laptop l1;
 
     Student(){
